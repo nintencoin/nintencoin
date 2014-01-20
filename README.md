@@ -74,3 +74,4 @@ Unit tests for the GUI code are in `src/qt/test/`. To compile and run them:
     ./nintencoin-qt_test
 
 
+
