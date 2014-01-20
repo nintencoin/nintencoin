@@ -15,8 +15,8 @@ nintencoin is a version of Litecoin and uses scrypt as a proof-of-work algorithm
  - 1 trillion total coins
 
 The rest is the same as Bitcoin.
- - 50 coins per block
- - 2016 blocks to retarget difficulty
+ - 500000 coins per block
+ - 500 blocks to retarget difficulty
 
 For more information, as well as an immediately useable, binary version of
 the nintencoin client sofware, see http://www.nintencoin.com.
