@@ -1063,16 +1063,35 @@ uint256 static GetOrphanRoot(const CBlockHeader* pblock)
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
-    int64 nSubsidy = 50 * COIN;
-
-    // Subsidy is cut in half every 840000 blocks, which will occur approximately every 4 years
-    nSubsidy >>= (nHeight / 840000); // Nintencoin: 840k blocks in ~4 years
-
+    int64 nSubsidy = 0;
+    if (nHeight <= 100000) {
+    	    nSubsidy = 5000000 * COIN;
+    }
+    else if (nHeight <= 200000) {
+    	    nSubsidy = 2500000 * COIN;
+    }
+    else if (nHeight <= 300000) {
+    	    nSubsidy = 1250000 * COIN;
+    }
+    else if (nHeight <= 400000) {
+    	    nSubsidy = 625000 * COIN;
+    }
+    else if (nHeight <= 500000) {
+    	    nSubsidy = 625000 * COIN;
+    }
+    else if (nHeight <= 600000) {
+    	    nSubsidy = 312500 * COIN;    	    
+    }
+    else {
+    	    nSubsidy = 1000 * COIN;    	    
+    }
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 3.5 * 24 * 60 * 60; // Nintencoin: 3.5 days
-static const int64 nTargetSpacing = 2.5 * 60; // Nintencoin: 2.5 minutes
+//static const int64 nTargetTimespan = 3.5 * 24 * 60 * 60; // Nintencoin: 3.5 days
+static const int64 nTargetTimespan = 1 * 60 * 60; // Nintencoin: 1 hour
+//static const int64 nTargetSpacing = 2.5 * 60; // Nintencoin: 2.5 minutes
+static const int64 nTargetSpacing = 1 * 60; // Nintencoin: 1 minute
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
 //
@@ -2756,7 +2775,7 @@ bool InitBlockIndex() {
         //   vMerkleTree: 97ddfbbae6
 
         // Genesis block
-        const char* pszTimestamp = "NY Times 05/Oct/2011 Steve Jobs, Apple’s Visionary, Dies at 56";
+        const char* pszTimestamp = "21/Jan/2014";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -2768,13 +2787,13 @@ bool InitBlockIndex() {
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1317972665;
+        block.nTime    = 1390316325;
         block.nBits    = 0x1e0ffff0;
         block.nNonce   = 2084524493;
 
         if (fTestNet)
         {
-            block.nTime    = 1317798646;
+            block.nTime    = 1370316325;
             block.nNonce   = 385270584;
         }
 
