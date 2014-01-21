@@ -4,14 +4,14 @@ nintencoin integration/staging tree
 http://www.nintencoin.com
 
 Copyright (c) 2009-2013 Bitcoin Developers
-Copyright (c) 2011-2013 Litecoin Developers
+Copyright (c) 2011-2013 Nintencoin Developers
 Copyright (c) 2014 nintencoin Developers
 
 
 What is nintencoin?
 ----------------
 
-nintencoin is a version of Litecoin and uses scrypt as a proof-of-work algorithm.
+nintencoin is a version of Nintencoin and uses scrypt as a proof-of-work algorithm.
  - 1 minute block targets
  - subsidy halves in 210k blocks (1 year)
  - 1 trillion total coins
