@@ -2789,12 +2789,12 @@ bool InitBlockIndex() {
         block.nVersion = 1;
         block.nTime    = 1390316325;
         block.nBits    = 0x1e0ffff0;
-        block.nNonce   = 440824;
+        block.nNonce   = 387067076;
 
         if (fTestNet)
         {
             block.nTime    = 1390316325;
-            block.nNonce   = 440824;
+            block.nNonce   = 387067076;
         }
 
         //// debug print
@@ -2805,7 +2805,7 @@ bool InitBlockIndex() {
         assert(block.hashMerkleRoot == uint256("0x052e9dc0489c868e299394f66580c75e430fbdd31ceb72086e0f657fdb5c8a7d"));
         
        // If genesis block hash does not match, then generate new genesis hash.
-        if (true ) //&& hash != hashGenesisBlock)
+        if (false && hash != hashGenesisBlock)
         {
             printf("Searching for genesis block...\n");
             // This will figure out a valid hash and Nonce if you're
@@ -2850,7 +2850,7 @@ bool InitBlockIndex() {
         
         
         block.print();
-        //assert(hash == hashGenesisBlock);
+        assert(hash == hashGenesisBlock);
 
         // Start new block file
         try {
