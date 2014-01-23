@@ -676,7 +676,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     // ********************************************************* Step 5: verify wallet database integrity
 
     if (!fDisableWallet) {
-        uiInterface.InitMessage(_("Verifying wallet..."));
+        uiInterface.InitMessage(_("Verifying Piggy Bank..."));
 
         if (!bitdb.Open(GetDataDir()))
         {
@@ -983,7 +983,7 @@ bool AppInit2(boost::thread_group& threadGroup)
         printf("Wallet disabled!\n");
         pwalletMain = NULL;
     } else {
-        uiInterface.InitMessage(_("Loading wallet..."));
+        uiInterface.InitMessage(_("Loading Piggy Bank..."));
 
         nStart = GetTimeMillis();
         bool fFirstRun = true;
