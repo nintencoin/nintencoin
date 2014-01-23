@@ -12,13 +12,13 @@ What is nintencoin?
 ----------------
 
 nintencoin is a version of Nintencoin and uses scrypt as a proof-of-work algorithm.
- - 1 minute block targets
- - subsidy halves in 210k blocks (1 year)
- - 1 trillion total coins
+ - TODO minutes block targets
+ - TODO subsidy halves in ??? blocks (? year(s))
+ - TODO total coins
 
 The rest is the same as Bitcoin.
- - 500000 coins per block
- - 500 blocks to retarget difficulty
+ - TODO coins per block
+ - TODO blocks to retarget difficulty
 
 For more information, as well as an immediately useable, binary version of
 the nintencoin client sofware, see http://www.nintencoin.com.
