@@ -19,6 +19,7 @@ CONFIG += static
 # Dependency library locations can be customized with:
 #    BOOST_INCLUDE_PATH, BOOST_LIB_PATH, BDB_INCLUDE_PATH,
 #    BDB_LIB_PATH, OPENSSL_INCLUDE_PATH and OPENSSL_LIB_PATH respectively
+win32 {
 BOOST_INCLUDE_PATH=c:/deps/boost
 BOOST_LIB_PATH=c:/deps/boost/stage/lib
 BDB_INCLUDE_PATH=c:/deps/db/build_unix
@@ -29,6 +30,7 @@ MINIUPNPC_INCLUDE_PATH=C:/deps
 MINIUPNPC_LIB_PATH=C:/deps/miniupnpc
 MINGW_THREAD_BUGFIX = 1
 win32:MINGW_THREAD_BUGFIX = 1
+}
 
 #INCLUDEPATHS= \
 # -I"$(CURDIR)" \
