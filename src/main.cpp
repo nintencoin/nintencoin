@@ -31,7 +31,7 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x6661c894e903a580a6cecf54df14e4c37192e8056811ec8bdaedc683464e895b");
+uint256 hashGenesisBlock("0x3dbcb7475b8cfe288bb05d98950dc256d3f93fab627f348141da7fd3c688e211");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Nintencoin: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -2731,7 +2731,7 @@ bool LoadBlockIndex()
         pchMessageStart[1] = 0xc1;
         pchMessageStart[2] = 0xb7;
         pchMessageStart[3] = 0xdc;
-        hashGenesisBlock = uint256("0x6661c894e903a580a6cecf54df14e4c37192e8056811ec8bdaedc683464e895b");
+        hashGenesisBlock = uint256("0x3dbcb7475b8cfe288bb05d98950dc256d3f93fab627f348141da7fd3c688e211");
     }
 
     //
@@ -2764,7 +2764,7 @@ bool InitBlockIndex() {
         //   vMerkleTree: 97ddfbbae6
 
         // Genesis block
-        const char* pszTimestamp = "21/Jan/2014";
+        const char* pszTimestamp = "1/Feb/2014 - Official ninten coin release";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -2776,14 +2776,14 @@ bool InitBlockIndex() {
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1390316325;
+        block.nTime    = 1391156027;
         block.nBits    = 0x1e0ffff0;
-        block.nNonce   = 387067076;
+        block.nNonce   = 3802776;
 
         if (fTestNet)
         {
-            block.nTime    = 1390316325;
-            block.nNonce   = 387067076;
+            block.nTime    = 1391156027;
+            block.nNonce   = 3802776;
         }
 
         //// debug print
@@ -2791,7 +2791,7 @@ bool InitBlockIndex() {
         printf("%s\n", hash.ToString().c_str());
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256("0x052e9dc0489c868e299394f66580c75e430fbdd31ceb72086e0f657fdb5c8a7d"));
+        assert(block.hashMerkleRoot == uint256("0x023f3787b7b1d71cc752e79f5620dba28b2af9f08365ecd52d94b169fbd2b8b4"));
         
        // If genesis block hash does not match, then generate new genesis hash.
         if (false && hash != hashGenesisBlock)
