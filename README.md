@@ -14,7 +14,7 @@ ninten coin is a version of Litecoin and uses scrypt as a proof-of-work algorith
  - 1 minute block targets
  - Subsidy is static at 31709 ninten coins per block
  - 100 billion total coins
- - 1 hour block to retarget difficulty
+ - 1 hour to retarget difficulty
  
 How to build on Linux
 
