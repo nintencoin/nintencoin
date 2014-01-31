@@ -31,20 +31,20 @@ How to build on Linux
 2). Download the latest sources for ninten coin from github
 > git clone https://github.com/nintencoin/nintencoin.git
 
-3.1a). Build ninten coin daemon
+3.1). Build ninten coin daemon
 > cd nintencoin/src
 > make -f makefile.unix
 > strip nintencoind
 
-3.1b). Run ninten coin daemon
+3.2). Run ninten coin daemon
 > ./nintencoind
 
-3.2). Build ninten coin piggy bank
+4.1). Build ninten coin qt piggy bank
 > cd nintencoin
 > qmake bitcoin-qt.pro
 > make
 
-4.1). Run piggy bank
+4.2). Run qt piggy bank
 > ./nintencoin-qt
 
 ----------------
