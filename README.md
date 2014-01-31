@@ -4,24 +4,53 @@ nintencoin integration/staging tree
 http://www.nintencoin.com
 
 Copyright (c) 2009-2013 Bitcoin Developers
-Copyright (c) 2011-2013 Nintencoin Developers
-Copyright (c) 2014 nintencoin Developers
+Copyright (c) 2011-2013 Litecoin Developers
+Copyright (c) 2014 ninten coin Developers
 
-
-What is nintencoin?
+What is ninten coin?
 ----------------
 
-nintencoin is a version of Nintencoin and uses scrypt as a proof-of-work algorithm.
- - TODO minutes block targets
- - TODO subsidy halves in ??? blocks (? year(s))
- - TODO total coins
+ninten coin is a version of Litecoin and uses scrypt as a proof-of-work algorithm.
+ - 1 minute block targets
+ - Subsidy is static at 31709 ninten coins per block
+ - 100 billion total coins
+ - 1 hour block to retarget difficulty
+ 
+How to build on Linux
 
-The rest is the same as Bitcoin.
- - TODO coins per block
- - TODO blocks to retarget difficulty
+1). Install all necessary dependencies
+> sudo apt-get update
+> sudo apt-get install sudo apt-get install build-essential libboost-all-dev
+> sudo apt-get install libcurl4-openssl-dev libdb5.1-dev libdb5.1++-dev git qt-sdk libminiupnpc-dev
+> sudo apt-get install python-software-properties screen git python-rrdtool python-pygame python-scipy 
+> sudo apt-get install python-twisted python-twisted-web python-imaging build-essential libglib2.0-dev libglibmm-2.4-dev 
+> sudo apt-get install python-dev libboost-all-dev libdb++-dev autoconf automake ncurses-dev
+> sudo apt-get install qttools5-dev-tools
+> sudo apt-get install libminiupnpc-dev
+
+2). Download the latest sources for ninten coin from github
+> git clone https://github.com/nintencoin/nintencoin.git
+
+3.1a). Build ninten coin daemon
+> cd nintencoin/src
+> make -f makefile.unix
+> strip nintencoind
+
+3.1b). Run ninten coin daemon
+> ./nintencoind
+
+3.2). Build ninten coin piggy bank
+> cd nintencoin
+> qmake bitcoin-qt.pro
+> make
+
+4.1). Run piggy bank
+> ./nintencoin-qt
+
+----------------
 
 For more information, as well as an immediately useable, binary version of
-the nintencoin client sofware, see http://www.nintencoin.com.
+the ninten coin client sofware, see http://www.nintencoin.com.
 
 License
 -------
