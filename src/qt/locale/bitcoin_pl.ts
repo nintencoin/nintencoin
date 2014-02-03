@@ -34,8 +34,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+0"/>
-        <source>The Nintencoin developers</source>
-        <translation>Deweloperzy Nintencoin</translation>
+        <source>The ninten coin developers</source>
+        <translation>Deweloperzy ninten coin</translation>
     </message>
 </context>
 <context>
@@ -1649,8 +1649,8 @@ Adres: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Nintencoin developers</source>
-        <translation>Deweloperzy Nintencoin</translation>
+        <source>The ninten coin developers</source>
+        <translation>Deweloperzy ninten coin</translation>
     </message>
     <message>
         <location line="+1"/>

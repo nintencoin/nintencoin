@@ -69,7 +69,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent) :
     prevBlocks(0)
 {
     restoreWindowGeometry();
-    setWindowTitle(tr("Nintencoin") + " - " + tr("Piggy Bank"));
+    setWindowTitle(tr("ninten coin") + " - " + tr("Piggy Bank"));
 #ifndef Q_OS_MAC
     QApplication::setWindowIcon(QIcon(":icons/bitcoin"));
     setWindowIcon(QIcon(":icons/bitcoin"));

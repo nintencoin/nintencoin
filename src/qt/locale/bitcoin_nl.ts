@@ -34,8 +34,8 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="+0"/>
-        <source>The Nintencoin developers</source>
-        <translation>De Nintencoin-ontwikkelaars</translation>
+        <source>The ninten coin developers</source>
+        <translation>De ninten coin-ontwikkelaars</translation>
     </message>
 </context>
 <context>
@@ -1649,8 +1649,8 @@ Adres: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Nintencoin developers</source>
-        <translation>De Nintencoin-ontwikkelaars</translation>
+        <source>The ninten coin developers</source>
+        <translation>De ninten coin-ontwikkelaars</translation>
     </message>
     <message>
         <location line="+1"/>

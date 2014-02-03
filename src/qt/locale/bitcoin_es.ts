@@ -37,8 +37,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="+0"/>
-        <source>The Nintencoin developers</source>
-        <translation>Los programadores Nintencoin</translation>
+        <source>The ninten coin developers</source>
+        <translation>Los programadores ninten coin</translation>
     </message>
 </context>
 <context>
@@ -1652,8 +1652,8 @@ Dirección: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Nintencoin developers</source>
-        <translation>Los programadores Nintencoin</translation>
+        <source>The ninten coin developers</source>
+        <translation>Los programadores ninten coin</translation>
     </message>
     <message>
         <location line="+1"/>
